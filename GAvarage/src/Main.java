@@ -1,6 +1,13 @@
 import java.util.Scanner;
 
 public class Main {
+    
+    /*Dersler : Matematik, Fizik, Türkçe, Kimya, Müzik
+        Geçme Notu : 55
+        Ödev
+        Eğer girilen ders notları 0 veya 100 arasında değil ise ortalamaya katılmasın.*/
+    
+    
     public static void main(String[] args) {
         int math, turkish, physics, chemical, music;
         int total= 0;
