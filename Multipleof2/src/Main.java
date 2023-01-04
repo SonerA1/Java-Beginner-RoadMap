@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class Main {
+    //Java döngüler ile girilen sayıya kadar olan 2'nin kuvvetlerini ekrana yazdıran programı yazıyoruz.
+    
+    
     public static void main(String[] args) {
         int n;
 
