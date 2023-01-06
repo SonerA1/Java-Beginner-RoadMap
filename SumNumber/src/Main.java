@@ -2,6 +2,10 @@ import java.util.Scanner;
 
 public class Main {
     public static void main(String[] args){
+        // Bir sayının basamak sayılarının toplamını hesaplayan program yazınız.
+        // Örnek : 1643 = 1 + 6 + 4 + 3 = 14
+        
+        
         int n;
         int k = 0;
         int total = 0;
