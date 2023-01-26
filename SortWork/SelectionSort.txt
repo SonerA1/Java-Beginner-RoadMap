@@ -1,0 +1,36 @@
+[22,27,16,2,18,6] -> Insertion Sort
+Yukarı verilen dizinin sort türüne göre aşamalarını yazınız.
+
+Insertion Sort; yani araya ekleme sıralama algoritması ikinci elemandan başlayarak elemanın kendinden önceki elemanlarla karşılaştırılması suretiyle büyük elemanların
+dizide sağa doğru kaydırılması işlemlerini tekrar eder.
+
+[22,27|16,2,18,6]
+[16,22,27|2,18,6]
+[2,16,22,27|18,6]
+[2,16,18,22,27|6]
+[2,6,16,18,22,27]
+--------------------------------------------
+Her ihtimale karşı;
+Selection Sort türünden ->
+
+[22,27,16,2,18,6]
+[2,27,16,22,18,6]--> Dizideki en küçük sayıyı bul ve en baştaki ile yer değiştir. (n)
+[2,6,16,22,18,27]--> (n-1) sayı içinden tekrar en küçük sayıyı bul ikinci sıradaki ile değiştir. (6-27)
+[2,6,16,22,18,27]--> (n-2) sayı içinden tekrar en küçük sayıyı bul zaten üçüncü sırada. (16)
+[2,6,16,18,22,27]--> (n-3) sayı içinden tekrar en küçüğü bul dördüncü sıradaki ile değiştir, sıralama tamamdır (18-22)
+--------------------------------------------
+Big-O gösterimini yazınız.
+
+Big-O=(n^2)
+--------------------------------------------
+Time Complexity: Dizi sıralandıktan sonra 18 sayısı aşağıdaki case'lerden hangisinin kapsamına girer? Yazınız
+
+Aradığımız sayının ortada olması durumu, Average case.
+--------------------------------------------
+
+[7,3,5,8,2,9,4,15,6] dizisinin Selection Sort'a göre ilk 4 adımını yazınız.
+
+a-> [2,3,5,8,7,9,4,15,6] dizideki en küçük sayıyı bul en baştaki ile yer değiştir (7-2)
+b-> [2,3,5,8,7,9,4,15,6] ikinci sıradaki zaten ikinci en küçük (3)
+c-> [2,3,4,8,7,9,5,15,6] üçüncü sıradaki ile kalan sayı içinden en küçüğü bul yer değiştir (5-4)
+d-> [2,3,4,5,7,9,8,15,6] dördüncü sıradaki ile kalan sayı içinden en küçüğü bul yer değiştir (8-5)
